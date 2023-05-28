@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Anteckningar</title>
+</head>
+<body>
+  <h1>Anteckningar</h1>
+
+  <form id="note-form">
+    <input type="text" id="note-title-input" placeholder="Titel" required>
+    <textarea id="note-text-sv-input" placeholder="Text (Svenska)" required></textarea>
+    <textarea id="note-text-fi-input" placeholder="Text (Finska)" required></textarea>
+    <button type="submit">Lägg till</button>
+  </form>
+
+  <form id="language-form">
+    <label for="language-select">Språk:</label>
+    <select id="language-select">
+      <option value="sv">Svenska</option>
+      <option value="fi">Finska</option>
+    </select>
+  </form>
+
+  <div id="notes-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
